@@ -63,8 +63,8 @@ header {
 	border-radius: 2px;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.15);
 }
-.lang img:hover,
-.lang img.active {
+.lang a:hover,
+.lang .active {
 	border-color: #61bcca;
 	background-color: #61bcca;
 }
