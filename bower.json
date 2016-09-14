@@ -1,0 +1,20 @@
+{
+  "name": "test-ngen",
+  "homepage": "https://github.com/Anton-Golovin/test-ngen",
+  "authors": [
+    "Anton Golovin <golovin.anton.sergeevich@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
