@@ -103,6 +103,38 @@ header {
 	transform: rotate(180deg);
 }
 
+
+/*service-menu*/
+.service-menu {
+	position: relative;
+	max-width: 950px;
+	margin: -100px auto;
+	padding: 0;
+	border-radius: 2px;
+	border: 2px solid #f8f9f1;
+	box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.25);
+	background-color: #fff;
+	font-size: 0;    
+	text-align: center;
+}
+.service-menu > li {
+	display: inline-block;
+	padding: 25px 15px;
+	width: 20%;
+	font-size: 12px;
+	color: #2ca6b8;
+	text-align: center;
+	vertical-align: top;
+	text-transform: uppercase;
+}
+.service-menu > li img {
+	display: block;
+	width: 132px;
+	height: 117px;
+	margin: 0 auto 25px auto;
+	border-radius: 2px;
+	box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.25);
+}
 /* <= Medium Devices*/
 @media only screen and (max-width : 992px) {
 	.container-fluid {
@@ -120,6 +152,14 @@ header {
 	.carousel-control.right span {
 		width: 50px;
 		height: 50px;
+	}
+	.service-menu {
+		margin: 0;
+		border-radius: 0;
+		border: none;
+	}
+	.service-menu > li {
+		width: 50%;
 	}
 }
 
