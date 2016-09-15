@@ -224,16 +224,74 @@
 			<h2 class="header-name">Наши партнеры</h2>
 			<p>Наши партнеры в Украине: сеть супермаркетов АТБ, Приват Банк, Алеф Виналь, Интерпайп, Юникредит банк, Новая почта и другие.</p>
 			<ul class="partner-list row">
-				<li class="col-sm-3"><img src="dist/img/partner-logo/privat.png" alt=""></li>
-				<li class="col-sm-3"><img src="dist/img/partner-logo/unicredit.png" alt=""></li>
-				<li class="col-sm-3"><img src="dist/img/partner-logo/atb.png" alt=""></li>
-				<li class="col-sm-3"><img src="dist/img/partner-logo/new_post.png" alt=""></li>
+				<li class="col-sm-3 col-xs-6"><img src="dist/img/partner-logo/privat.png" alt=""></li>
+				<li class="col-sm-3 col-xs-6"><img src="dist/img/partner-logo/unicredit.png" alt=""></li>
+				<li class="col-sm-3 col-xs-6"><img src="dist/img/partner-logo/new_post.png" alt=""></li>
+				<li class="col-sm-3 col-xs-6"><img src="dist/img/partner-logo/atb.png" alt=""></li>
 			</ul>
 			<p>Если вы ищите быстрые и качественные услуги грузоперевозки в Украине, обратитесь в компанию.</p>
 			<p>Мы доставим ваш объект в нужное время и в нужное место в целости и сохранности.  Гарантия качества нашей деятельности подтверждена не только документально. Мы более пяти лет надежно доставляем грузовые объекты  наших партнеров.</p>
 		</div>
 	</div>
 
+	<div class="application">
+		<div class="container">
+			<form action="#" class="form-horizontal">
+				<div class="form-group">
+					<div class="col-sm-4 control-label">
+						<h3 class="header-small">Заполнить заявку</h3>
+						<p>Описание груза: <br>Будет полезно указать маршрут, объем, вес груза в кг, код ТН ВЭД, количество шт, кол-во мест.</p>
+					</div>
+					<div class="col-sm-8">
+						<textarea name="desc" id="" cols="30" rows="10"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="" class="col-sm-4 control-label">Международные перевозки</label>
+					<div class="col-sm-8">
+						<div class="checkbox">
+							<label>
+								<input name="deliv" type="checkbox"> 
+								Сделайте отметку, если Вам необходимы услуги международных перевозок
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputFio" class="col-sm-4 control-label">ФИО</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="inputFio" name="fio">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputCity" class="col-sm-4 control-label">Город</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="inputCity" name="city">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputPhone" class="col-sm-4 control-label">Телефон</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="inputPhone" name="phone">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="col-sm-4 control-label">Эл. почта:</label>
+					<div class="col-sm-8">
+						<input type="email" class="form-control" id="inputEmail" name="email">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-4">
+						<button type="submit" class="btn btn-default">Отправить заявку</button>
+					</div>
+					<div class="col-sm-8 download">
+						<a href="#">Скачать полную форму заявки в Excel</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 	<!-- all Libs + myJS -->
 	<script src='dist/libs/libs.min.js'></script>
 	<script src='dist/js/script.min.js'></script>
