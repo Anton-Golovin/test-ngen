@@ -408,14 +408,43 @@ header {
 	height: 160px;
 	resize: none;
 }
-
-
-
-
-
-
-
-
+.checkbox label:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 30%;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	border: 1px solid #2e4054;
+	border-radius: 2px;
+	background-color: #f5f5f5;
+}
+.checkbox label {
+	margin-left: 20px;
+}
+.checkbox label:before {
+	border-radius: 3px;
+}
+.checkbox input[type=radio]:checked + label:before {
+	content: "\2022";
+	color: #000;
+	font-size: 30px;
+	text-align: center;
+	line-height: 25px;
+}
+.checkbox input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 15px;
+	color: #000;
+	text-align: center;
+	line-height: 25px;
+}
+.checkbox input[type=checkbox] {
+	display: none;
+}
 
 
 
@@ -490,5 +519,15 @@ header {
 	}
 	.about .text {
 		width: 100%;
+	}
+	.application form {
+		padding: 30px 20px;
+	}
+	.application form .header-small {
+		padding: 0 0 20px;
+	}
+	.application form input:not([type=checkbox]),
+	.application form textarea {
+		padding: 19px;
 	}
 }
