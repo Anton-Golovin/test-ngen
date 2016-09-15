@@ -1,3 +1,9 @@
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
 body {
 	min-width: 320px;
 	background: #fbfbfb;
@@ -22,7 +28,10 @@ header {
 	padding: 5px 18px 7px 19px;
 	margin-right: -15px;
 }
-
+.header-white {
+	font-size: 30px;
+	color: #fff;
+}
 /*logo*/
 .logo {
 	text-align: center;
@@ -144,7 +153,7 @@ header {
 .service-menu .img-wrapper {
 	position: relative;
 	display: inline-block;	
-    width: 100%;
+	width: 100%;
 	margin-bottom: 25px;
 }
 .service-menu .img-wrapper img {
@@ -184,7 +193,8 @@ header {
 .about {
 	width: 100%;
 	min-height: 500px;
-	background: url('../img/Lufthansa-airfreight-12.jpg') no-repeat;
+	background-image: url('../img/Lufthansa-airfreight-12.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 50px;
 }
@@ -193,10 +203,46 @@ header {
 	padding-top: 30px;
 	width: 60%;
 }
+
+/*advantages*/
+.advantages {
+	width: 100%;
+	padding-top: 40px;
+	background-image: url('../img/ship.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	font-size: 0;
+}
+.advantages .adv-item {
+	width: 50%;
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 16px;
+	text-align: left;
+}
+.advantages .adv-item-number {
+	font-weight: bold;
+	font-size: 180px;
+	color: #60c2d3;
+	width: 30%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.advantages .adv-item-text {
+	display: table-cell;
+	vertical-align: middle;
+	max-width: 330px;
+}
 /* <= Medium Devices*/
 @media only screen and (max-width : 992px) {
-	.container-fluid {
+	header.container-fluid {
 		text-align: center;
+	}
+	.carousel {
+		box-shadow: 0 0 13px -2px rgba(0,0,0,.75);
 	}
 	.nav li a {
 		padding: 10px 19px;
@@ -220,12 +266,26 @@ header {
 	.service-menu > li {
 		width: 30%;
 	}
+	.about {
+		min-height: 450px;
+	}
 	.about .text {
 		width: 80%;
 	}
+	.advantages .adv-item {
+		width: 100%;
+	}
+	.advantages .adv-item-number {
+		width: auto;
+		padding-right: 30px;
+		font-size: 100px;
+	}
+	.advantages .adv-item-text {
+		max-width: none;
+	}
 }
 
-/* <= Small Devices*/
+/* <= Extra small Devices*/
 @media only screen and (max-width : 480px) {
 	.bar>div:first-child {
 		padding-right: 0;
