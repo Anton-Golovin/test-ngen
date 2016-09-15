@@ -1,6 +1,6 @@
 body {
 	min-width: 320px;
-	background: #e2e2e2;
+	background: #fbfbfb;
 	font-family: 'Roboto', sans-serif; 
 	font-size: 15px;
 }
@@ -10,6 +10,19 @@ header {
 	background: #fff;
 	box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
 }
+/*headlines*/
+.header-name {
+	font-size: 30px;
+	font-weight: bold;
+	color: #2ca6b8;
+	text-transform: uppercase;
+}
+.header-name:first-letter {
+	background: url('../img/first-letter.png') no-repeat;
+	padding: 5px 18px 7px 19px;
+	margin-right: -15px;
+}
+
 /*logo*/
 .logo {
 	text-align: center;
@@ -107,8 +120,9 @@ header {
 /*service-menu*/
 .service-menu {
 	position: relative;
+	top: -50px;
 	max-width: 950px;
-	margin: -100px auto;
+	margin: -50px auto;
 	padding: 0;
 	border-radius: 2px;
 	border: 2px solid #f8f9f1;
@@ -130,6 +144,7 @@ header {
 .service-menu .img-wrapper {
 	position: relative;
 	display: inline-block;	
+    width: 100%;
 	margin-bottom: 25px;
 }
 .service-menu .img-wrapper img {
@@ -164,6 +179,20 @@ header {
 	margin-top: 40px;
 	color: #fff;
 }
+
+/*about*/
+.about {
+	width: 100%;
+	min-height: 500px;
+	background: url('../img/Lufthansa-airfreight-12.jpg') no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+}
+.about .text {
+	padding-left: 14px;
+	padding-top: 30px;
+	width: 60%;
+}
 /* <= Medium Devices*/
 @media only screen and (max-width : 992px) {
 	.container-fluid {
@@ -183,12 +212,16 @@ header {
 		height: 50px;
 	}
 	.service-menu {
+		position: static;
 		margin: 0;
 		border-radius: 0;
 		border: none;
 	}
 	.service-menu > li {
 		width: 30%;
+	}
+	.about .text {
+		width: 80%;
 	}
 }
 
@@ -199,5 +232,8 @@ header {
 	}
 	.service-menu > li {
 		width: 50%;
+	}
+	.about .text {
+		width: 100%;
 	}
 }
