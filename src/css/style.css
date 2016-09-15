@@ -207,7 +207,7 @@ header {
 /*advantages*/
 .advantages {
 	width: 100%;
-	padding-top: 40px;
+	padding: 40px 0 25px;
 	background-image: url('../img/ship.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -236,6 +236,94 @@ header {
 	vertical-align: middle;
 	max-width: 330px;
 }
+
+/*blog-slider*/
+.blog-slider {
+	padding: 30px 0;
+	overflow: hidden;
+}
+.blog-slider .owl-element {
+	border: 1px solid #d7d7d7;
+	border-radius: 1px;
+	text-align: center;
+	border-radius: 1px;
+	overflow: hidden;
+}
+.blog-slider .owl-item .owl-text {
+	padding: 20px 10px;
+	text-align: left;
+	font-size: 14px;
+}
+.blog-slider .owl-item .owl-text span {
+	display: block;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.blog-slider .owl-item a.overlay {
+	position: absolute;
+	display: none;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+.blog-slider .owl-item:hover a.overlay {
+	display: block;
+	background: rgba(0, 0, 0, .7);
+}
+.blog-slider .owl-item a.overlay span {
+	position: relative;
+	top: 50%;
+	display: block;
+	width: 195px;
+	margin: -20px auto;
+	padding: 15px;
+	background-color: #2ca6b8;
+	border-radius: 3px;
+	color: #fff;
+}
+/*nav in blog slider*/
+.blog-slider .owl-nav div {
+	position: absolute;
+	top: 50%;
+	width: 45px;
+	height: 45px;
+	margin-top: -22px;
+	background: #60c2d3 url(../img/next.png) 50% no-repeat;
+	background-size: 60%;
+}
+.blog-slider .owl-nav .owl-prev {
+	transform: rotate(180deg);
+	left: -60px;
+}
+.blog-slider .owl-nav .owl-next {
+	right: -60px;
+}
+.blog-slider .owl-dots {
+	display: none;
+	text-align: center;
+}
+.blog-slider .owl-dots .owl-dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 10px 5px 0;
+    background-color: #ffffff;
+    border: 1px solid #d7d7d7;
+}
+.blog-slider .owl-dots .owl-dot.active {
+	background-color: #60c2d3;
+}
+/* <= Large Devices*/
+@media only screen and (max-width : 1280px) {
+	.blog-slider .owl-nav {
+		display: none;
+	}
+	.blog-slider .owl-dots {
+		display: block;
+	}
+}
+
 /* <= Medium Devices*/
 @media only screen and (max-width : 992px) {
 	header.container-fluid {
