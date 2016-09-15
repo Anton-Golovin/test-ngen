@@ -368,6 +368,7 @@ header {
 .application form .control-label {
 	padding-top: 17px;
 }
+.application form .check,
 .application form .control-label p {
 	text-align: left;
 }
@@ -378,6 +379,9 @@ header {
 }
 .application form .form-group:last-child {
 	margin-bottom: 0;
+}
+.application form label {
+	font-weight: normal;
 }
 .application form .download {
 	text-align: center;
