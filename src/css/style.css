@@ -63,8 +63,8 @@ header {
 	border-radius: 2px;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.15);
 }
-.lang a:hover,
-.lang .active {
+.lang img:hover,
+.lang .active img{
 	border-color: #61bcca;
 	background-color: #61bcca;
 }
@@ -117,7 +117,7 @@ header {
 	font-size: 0;    
 	text-align: center;
 }
-.service-menu > li {
+.service-menu li {
 	display: inline-block;
 	padding: 25px 15px;
 	width: 20%;
@@ -127,13 +127,42 @@ header {
 	vertical-align: top;
 	text-transform: uppercase;
 }
-.service-menu > li img {
+.service-menu .img-wrapper {
+	position: relative;
+	display: inline-block;	
+	margin-bottom: 25px;
+}
+.service-menu .img-wrapper img {
 	display: block;
 	width: 132px;
 	height: 117px;
-	margin: 0 auto 25px auto;
+	margin: 0 auto;
 	border-radius: 2px;
 	box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.25);
+}
+.service-menu .img-wrapper:hover .overlay {
+	display: block;
+}
+.service-menu .img-wrapper .overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 132px;
+	height: 117px;
+	margin: auto;
+	background: rgba(0, 0, 0, .7);
+}
+.service-menu .img-wrapper .overlay span {
+	display: block;
+	width: 95px;
+	padding: 10px;
+	background-color: #2ca6b8;
+	border-radius: 3px;
+	margin: 0 auto;
+	margin-top: 40px;
+	color: #fff;
 }
 /* <= Medium Devices*/
 @media only screen and (max-width : 992px) {
@@ -159,7 +188,7 @@ header {
 		border: none;
 	}
 	.service-menu > li {
-		width: 50%;
+		width: 30%;
 	}
 }
 
@@ -167,5 +196,8 @@ header {
 @media only screen and (max-width : 480px) {
 	.bar>div:first-child {
 		padding-right: 0;
+	}
+	.service-menu > li {
+		width: 50%;
 	}
 }
