@@ -4,6 +4,10 @@
 	font-weight: 400;
 	src: url(../fonts/Roboto-Regular.ttf);
 }
+* {
+	padding: 0;
+	margin: 0;
+}
 body {
 	min-width: 320px;
 	background: #fbfbfb;
@@ -213,7 +217,7 @@ footer {
 /*advantages*/
 .advantages {
 	width: 100%;
-	padding: 40px 0 25px;
+	padding: 40px 0 30px;
 	background-image: url('../img/ship.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -401,6 +405,10 @@ footer {
 	color: #fff;
 	text-transform: uppercase;
 } 
+.application form button:hover {
+	color: #fff;
+	background-color: #2ca6b8;
+}
 .application form input:not([type='checkbox']),
 .application form textarea {
 	width: 100%;
@@ -450,6 +458,53 @@ footer {
 .checkbox input[type=checkbox] {
 	display: none;
 }
+/*footer*/
+.footer-info {
+	padding: 35px 0;
+	background-image: url('../img/road.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	font-size: 17px;
+	color: #fff;
+}
+.footer-info p {
+	margin-bottom: 30px;
+}
+.footer-info .btn {
+	width: 350px;
+	padding: 25px;
+	background-color: #2ca6b8;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 3px;
+}
+.footer-info .soc-link {
+	max-width: 430px;
+	margin: 30px auto;
+	font-size: 0;
+}
+.footer-info .soc-link li {
+	width: 33.33333%;
+	display: inline-block;
+	list-style: none;
+}
+.footer-sign {
+	background-color: #1b1a1a;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+}
+.footer-sign p {
+	margin: 8px;
+}
+
+
+
+
+
+
 
 
 
@@ -525,6 +580,9 @@ footer {
 	.about .text {
 		width: 100%;
 	}
+	.advantages .header-white {
+		padding-bottom: 20px;
+	}
 	.application form {
 		padding: 30px 20px;
 	}
@@ -534,5 +592,8 @@ footer {
 	.application form input:not([type=checkbox]),
 	.application form textarea {
 		padding: 19px;
+	}
+	.footer-info .btn {
+		width: 100%;
 	}
 }

@@ -2,11 +2,11 @@
 	$(document).ready(function(){
 		$(".owl-carousel").owlCarousel({
 			nav:true,
+			margin: 30,
 			navText: [
 			'<span class="glyphicon" aria-hidden="true"></span>',
 			'<span class="glyphicon" aria-hidden="true"></span>'
 			],
-			margin: 30,
 			responsive:{
 				0:{
 					items:1
